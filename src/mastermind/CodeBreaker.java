@@ -1,2 +1,6 @@
-package mastermind;public interface CodeBreaker {
+package mastermind;
+
+public interface CodeBreaker {
+
 }
+

@@ -1,2 +1,4 @@
-package mastermind;public class RandomCodeMaker {
+package mastermind;
+
+public class RandomCodeMaker {
 }

@@ -1,2 +1,4 @@
-package mastermind;public class ConsoleCodeMaker {
+package mastermind;
+
+public class ConsoleCodeMaker {
 }

@@ -1,2 +1,4 @@
-package mastermind;public interface CodeMaker {
+package mastermind;
+
+public interface CodeMaker {
 }

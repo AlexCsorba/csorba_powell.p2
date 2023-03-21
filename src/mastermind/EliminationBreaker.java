@@ -1,2 +1,4 @@
-package mastermind;public class EliminationBreaker {
+package mastermind;
+
+public class EliminationBreaker {
 }

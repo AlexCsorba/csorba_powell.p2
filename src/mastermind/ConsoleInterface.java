@@ -1,2 +1,4 @@
-package mastermind;public class ConsoleInterface {
+package mastermind;
+
+public class ConsoleInterface {
 }

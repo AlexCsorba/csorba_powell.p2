@@ -1,2 +1,4 @@
-package mastermind;public class MS1Main {
+package mastermind;
+
+public class MS1Main {
 }
