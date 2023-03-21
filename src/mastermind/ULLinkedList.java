@@ -1,4 +1,2 @@
-package mastermind;
-
-public class ULLinkedList<E> {
+package mastermind;public class ULLinkedList {
 }

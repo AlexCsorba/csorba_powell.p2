@@ -7,28 +7,12 @@
     <list default="true" id="44c31ced-f1c4-4548-a42e-dd33b81d0220" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mastermind/Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/Code.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mastermind/CodeBreaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/CodeBreaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mastermind/CodeMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/CodeMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mastermind/ConsoleCodeBreaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/ConsoleCodeBreaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mastermind/ConsoleCodeMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/ConsoleCodeMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mastermind/ConsoleInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/ConsoleInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mastermind/EliminationBreaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/EliminationBreaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mastermind/MS1Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/MS1Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mastermind/RandomCodeMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/RandomCodeMaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mastermind/ULLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/ULLinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,13 +26,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Alex/IdeaProjects/csorba_powell.p2/csorba_powell.p2.iml"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

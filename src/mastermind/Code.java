@@ -2,6 +2,29 @@ package mastermind;
 
 import java.util.NoSuchElementException;
 public class Code implements Cloneable {
+
+    public class Results
+    {
+        private int totalBulls = 0;
+        private int totalCows = 0;
+        public Results(int bulls, int cows){
+            totalBulls = bulls;
+            totalCows = cows;
+        }
+
+        public int getBulls(){
+            return totalBulls;
+        }
+
+        public int getCows(){
+            return totalCows;
+        }
+
+        public boolean equals(Results otherObject){
+            return totalBulls == otherObject.getBulls() && totalCows == otherObject.getCows();
+        }
+    }
+
     private String code;
 
     public Code(String code) throws IllegalArgumentException {
