@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44c31ced-f1c4-4548-a42e-dd33b81d0220" name="Changes" comment="results section done">
+    <list default="true" id="44c31ced-f1c4-4548-a42e-dd33b81d0220" name="Changes" comment="ms1 done?">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_20_2023_10_23_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_20_2023_10_23_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mastermind/Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/Code.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mastermind/MS1Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/MS1Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mastermind/CodeBreaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/CodeBreaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mastermind/CodeMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/CodeMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mastermind/ConsoleCodeMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/ConsoleCodeMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mastermind/ConsoleInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/ConsoleInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mastermind/EliminationBreaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/EliminationBreaker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,12 +32,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/julia/IdeaProjects/csorba_powell.p2"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="MS1Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mastermind.MS1Main" />
@@ -69,11 +76,40 @@
       <option name="project" value="LOCAL" />
       <updated>1679365908266</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ms1 done?">
+      <created>1679367151064</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679367151064</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ms1 done?">
+      <created>1679367215734</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679367215734</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ms1 done?">
+      <created>1679367261337</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679367261337</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ms1 done?">
+      <created>1679367345953</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679367345953</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="results section done" />
-    <option name="LAST_COMMIT_MESSAGE" value="results section done" />
+    <MESSAGE value="ms1 done?" />
+    <option name="LAST_COMMIT_MESSAGE" value="ms1 done?" />
   </component>
 </project>

@@ -3,7 +3,7 @@ package mastermind;
 import java.util.NoSuchElementException;
 public class Code implements Cloneable {
 
-    public class Results
+    public static class Results
     {
         private int totalBulls = 0;
         private int totalCows = 0;
