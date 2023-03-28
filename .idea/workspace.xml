@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44c31ced-f1c4-4548-a42e-dd33b81d0220" name="Changes" comment="results section done">
+    <list default="true" id="44c31ced-f1c4-4548-a42e-dd33b81d0220" name="Changes" comment="working on ms1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mastermind/Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/Code.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mastermind/MS1Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/MS1Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mastermind/CodeBreaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/CodeBreaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mastermind/CodeMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/CodeMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mastermind/EliminationBreaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/EliminationBreaker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,27 +33,6 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration name="MS1Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mastermind.MS1Main" />
-      <module name="csorba_powell.p2" />
-      <option name="PROGRAM_PARAMETERS" value="abcd abdc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mastermind.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.MS1Main" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,18 +42,6 @@
       <option name="presentableId" value="Default" />
       <updated>1678218231518</updated>
     </task>
-    <task id="LOCAL-00001" summary="results section done">
-      <created>1679365908266</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1679365908266</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="results section done" />
-    <option name="LAST_COMMIT_MESSAGE" value="results section done" />
   </component>
 </project>
