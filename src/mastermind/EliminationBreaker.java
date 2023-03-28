@@ -25,51 +25,45 @@ import java.util.List;
 
 public class EliminationBreaker implements CodeBreaker {
 
-    private int codeLength; // the length of the secret code
-    private int codeRange; // the range of possible values for each digit
-    private int remainingCodes; // the number of remaining possible codes
-    private boolean[] eliminatedCodes; // an array to keep track of which codes have been eliminated
-    private Code.Results corretOutPuts;
+    private int length; // the length of the secret code
+    private int range; // the range of possible values for each digit
+    private int nRemainingCodes; // the number of remaining possible codes
+    private double nPossCodes;
+    private Code.Results correctCodeOutput;
     private List<Code> possibleCodes;
 
 
 
     public EliminationBreaker(int codeLength, int codeRange) {
-        codeLength = codeLength;
-        codeRange = codeRange;
-        remainingCodes = (int) Math.pow(codeRange, codeLength);
-        eliminatedCodes = new boolean[remainingCodes];
-        corretOutPuts = new Code.Results(codeLength, 0) ;
+        length = codeLength;
+        range = codeRange;
+        nRemainingCodes = possibleCodes.size();
+        correctCodeOutput = new Code.Results(length, 0);
+        nPossCodes = Math.pow(range, length);
+        possibleCodes = generatePossibleCodes(range);
+        }
 
-
+    public List<Code> generatePossibleCodes(int codeRange){
+        List<Code> generatedList = null;
+        while(nextGuess().hasNextCode(codeRange)){
+            Code currentCode =
+            generatedList.add();
+        }
     }
+
 
 
     public Code nextGuess() {
 
-        int guess = 0;
-        while (eliminatedCodes[guess]) {
-            guess++;
-        }
-        eliminatedCodes[guess] = true;
-        remainingCodes--;
-        return new Code();
     }
 
 
     public void guessResults(Code guess, Code.Results results) {
-        for (int i = 0; i < eliminatedCodes.length; i++) {
-            if (!eliminatedCodes[i]) {
-                if (!corretOutPuts.equals(results)) {
-                    eliminatedCodes[i] = true;
-                    remainingCodes--;
-                }
-            }
-        }
+
     }
 
 
     public int possibleCodeCount() {
-        return remainingCodes;
+        return nRemainingCodes;
     }
 }
