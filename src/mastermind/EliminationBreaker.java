@@ -53,7 +53,7 @@ public class EliminationBreaker implements CodeBreaker {
         }
         eliminatedCodes[guess] = true;
         remainingCodes--;
-        return null;//new Code();
+        return new Code();
     }
 
 
