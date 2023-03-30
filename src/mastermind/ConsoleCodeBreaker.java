@@ -6,30 +6,35 @@ import java.io.PrintStream;
 public class ConsoleCodeBreaker implements CodeBreaker {
     private Scanner scanner;
     private PrintStream out;
-    private int codeLength;
-    private int codeRange;
+    private int Length;
+    private int Range;
 
     public ConsoleCodeBreaker(Scanner scanner, PrintStream out, int codeLength, int codeRange) {
-        this.scanner = scanner;
-        this.out = out;
-        this.codeLength = codeLength;
-        this.codeRange = codeRange;
+        scanner = scanner;
+        out = out;
+        Length = codeLength;
+        Range = codeRange;
     }
 
     public Code nextGuess() {
-        Code guess = null;
-        boolean validGuess = false;
-        while (!validGuess) {
-            out.print("Enter your guess (" + codeLength + " digits from 1 to " + codeRange + "): ");
-            String input = scanner.nextLine();
+        String guessString;
+        Code guess;
+
+        while (true) {
+            System.out.print("Enter your guess (must be " + Length + " digits between 1-" + Range + "): ");
+            guessString = scanner.nextLine();
+
             try {
-                guess = new Code(input);
-                validGuess = true;
-            } catch (IllegalArgumentException e) {
-                out.println("Invalid guess: " + e.getMessage());
+                guess = new Code(guessString);
+                if (guess.length() == Length && guess.range() == Range) {
+                    return guess;
+                } else {
+                    System.out.println("Invalid guess. Please try again.");
+                }
+            } catch (Exception e) {
+                System.out.println("Invalid guess. Please try again.");
             }
         }
-        return guess;
     }
 
     public void guessResults(Code guess, Code.Results results) {
