@@ -3,45 +3,52 @@ package mastermind;
 import java.util.Scanner;
 import java.io.PrintStream;
 
-public class ConsoleCodeBreaker implements CodeBreaker {
-    private Scanner scanner;
-    private PrintStream out;
-    private int Length;
-    private int Range;
+public class ConsoleCodeBreaker implements CodeBreaker{
+    private final Scanner scan;
+    private final PrintStream output;
+    private final int length;
+    private final int range;
 
-    public ConsoleCodeBreaker(Scanner scanner, PrintStream out, int codeLength, int codeRange) {
-        scanner = scanner;
-        out = out;
-        Length = codeLength;
-        Range = codeRange;
+    public ConsoleCodeBreaker(java.util.Scanner scanner, java.io.PrintStream out, int codeLength, int codeRange){
+        scan = scanner;
+        output = out;
+        length = codeLength;
+        range = codeRange;
     }
 
-    public Code nextGuess() {
-        String guessString;
-        Code guess;
+    public Code nextGuess(){
+        String userGuess = "";
+        boolean givenValidGuess = false;
 
-        while (true) {
-            System.out.print("Enter your guess (must be " + Length + " digits between 1-" + Range + "): ");
-            guessString = scanner.nextLine();
+        while (!givenValidGuess) {
+            output.print("Enter your guess which is" + length + " characters long which are from a-z" + range);
+            String input = scan.nextLine().trim();
+            if (input.length() != length) {
+                output.println("Invalid guess length");
+            }
 
-            try {
-                guess = new Code(guessString);
-                if (guess.length() == Length && guess.range() == Range) {
-                    return guess;
-                } else {
-                    System.out.println("Invalid guess. Please try again.");
+            int invalidCaracters = 0;
+            for (char character : input.toCharArray()) {
+                if (character < '1' || Character.getNumericValue(character) > range) {
+                    ++invalidCaracters;
                 }
-            } catch (Exception e) {
-                System.out.println("Invalid guess. Please try again.");
+            }
+            if (invalidCaracters>0) {
+                output.println("Guess out of specified range");
+            }
+            else{
+                givenValidGuess = true;
+                userGuess = input;
             }
         }
+        return new Code(userGuess);
     }
 
+    @Override
     public void guessResults(Code guess, Code.Results results) {
-        // Do nothing
     }
 
-    public int possibleCodeCount() {
+    public int possibleCodeCount(){
         return 0;
     }
 }

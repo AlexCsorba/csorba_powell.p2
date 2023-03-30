@@ -1,3 +1,4 @@
+/*
 package mastermind;
 
 import java.io.PrintStream;
@@ -36,3 +37,4 @@ public class ConsoleInterface {
         }
     }
 }
+*/

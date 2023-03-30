@@ -1,3 +1,4 @@
+
 package mastermind;
 
 import java.util.ArrayList;
@@ -10,9 +11,8 @@ public class EliminationBreaker implements CodeBreaker {
     private int codeRange; // the range of possible values for each digit
     private int remainingCodes; // the number of remaining possible codes
     private boolean[] eliminatedCodes; // an array to keep track of which codes have been eliminated
-    private Code.Results corretOutPuts;
+    private Code.Results corretOutputs;
     private List<Code> possibleCodes;
-
 
 
     public EliminationBreaker(int codeLength, int codeRange) {
@@ -20,28 +20,18 @@ public class EliminationBreaker implements CodeBreaker {
         codeRange = codeRange;
         remainingCodes = (int) Math.pow(codeRange, codeLength);
         eliminatedCodes = new boolean[remainingCodes];
-        corretOutPuts = new Code.Results(codeLength, 0) ;
-
-
+        corretOutputs = new Code.Results(codeLength, 0);
     }
 
 
     public Code nextGuess() {
-
-        int guess = 0;
-        while (eliminatedCodes[guess]) {
-            guess++;
-        }
-        eliminatedCodes[guess] = true;
-        remainingCodes--;
-        return new Code();
     }
 
 
     public void guessResults(Code guess, Code.Results results) {
         for (int i = 0; i < eliminatedCodes.length; i++) {
             if (!eliminatedCodes[i]) {
-                if (!corretOutPuts.equals(results)) {
+                if (!corretOutputs.equals(results)) {
                     eliminatedCodes[i] = true;
                     remainingCodes--;
                 }
