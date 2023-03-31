@@ -25,15 +25,16 @@ public class Code implements Cloneable {
         }
     }
 
-    private String code;
+    private String gameCode;
+    private int length;
 
     public Code(String code) throws IllegalArgumentException {
-        for (char c : code.toCharArray()) {
-            if (!Character.isLetter(c)) {
-                throw new IllegalArgumentException("Invalid character in code: " + c);
+        for (char item : code.toCharArray()) {
+            if (!Character.isLetter(item)) {
+                throw new IllegalArgumentException("Invalid character in code: " + item);
             }
         }
-        this.code = code.toLowerCase();
+        gameCode = code.toLowerCase();
     }
 
     public Code clone() throws CloneNotSupportedException {
@@ -51,19 +52,19 @@ public class Code implements Cloneable {
             return false;
         }
         Code other = (Code) otherObject;
-        return this.code.equals(other.code);
+        return gameCode.equals(other.gameCode);
     }
 
     public Results compare(Code other) throws IllegalArgumentException {
-        if (this.code.length() != other.code.length()) {
+        if (gameCode.length() != other.gameCode.length()) {
             throw new IllegalArgumentException("Code lengths do not match");
         }
         int bulls = 0;
         int cows = 0;
         int[] counts = new int[26];
-        for (int i = 0; i < this.code.length(); i++) {
-            char c1 = this.code.charAt(i);
-            char c2 = other.code.charAt(i);
+        for (int i = 0; i < gameCode.length(); i++) {
+            char c1 = gameCode.charAt(i);
+            char c2 = other.gameCode.charAt(i);
             if (c1 == c2) {
                 bulls++;
             } else {
@@ -81,7 +82,7 @@ public class Code implements Cloneable {
     }
 
     public Code nextCode(int range) {
-        char[] chars = this.code.toCharArray();
+        char[] chars = gameCode.toCharArray();
         for (int i = chars.length - 1; i >= 0; i--) {
             if (chars[i] < 'a' + range - 1) {
                 chars[i]++;
@@ -95,30 +96,31 @@ public class Code implements Cloneable {
     }
 
     public boolean hasNextCode(int range) {
-        for (char c : this.code.toCharArray()) {
-            if (c < 'a' + range - 1) {
-                return true;
+        boolean nextCodePossible = false;
+        for (char c : gameCode.toCharArray()) {
+            if (c < 'a' + range - 1 && nextCodePossible == false) {
+                nextCodePossible = true;
             }
         }
-        return false;
+        return nextCodePossible;
     }
 
     public int range() {
         int max = 0;
-        for (char c : this.code.toCharArray()) {
-            int value = c - 'a' + 1;
+        for (char item : gameCode.toCharArray()) {
+            int value = Character.getNumericValue(item);
             if (value > max) {
                 max = value;
             }
         }
-        return max;
+        return max-9;
     }
 
     public int length() {
-        return this.code.length();
+       return gameCode.length();
     }
 
     public String toString() {
-        return this.code;
+        return gameCode;
     }
 }

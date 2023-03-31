@@ -22,12 +22,14 @@ public class ConsoleCodeMaker implements CodeMaker{
         while (validCode == 0) {
             System.out.print("Enter a code that is " + length + " long that is comprised of characters between 1 and " + range);
             String input = scan.nextLine();
+            input = input.trim();
 
             if (input.length() != length) {
                 System.out.println("Please enter a code of specified length");
             }
+
             else for (char item : input.toCharArray()) {
-                if (Character.getNumericValue(item) < 1 || Character.getNumericValue(item) > range) {
+                if (Character.getNumericValue(item) < 1 || Character.getNumericValue(item)-9 > range) {
                     System.out.println("Please enter a code with acceptable values");
                 } else {
                     validCharacters++;

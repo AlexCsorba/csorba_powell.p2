@@ -8,6 +8,7 @@ public class ConsoleCodeBreaker implements CodeBreaker{
     private final PrintStream output;
     private final int length;
     private final int range;
+    char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
 
     public ConsoleCodeBreaker(java.util.Scanner scanner, java.io.PrintStream out, int codeLength, int codeRange){
         scan = scanner;
@@ -21,7 +22,7 @@ public class ConsoleCodeBreaker implements CodeBreaker{
         boolean givenValidGuess = false;
 
         while (!givenValidGuess) {
-            output.print("Enter your guess which is" + length + " characters long which are from a-z" + range);
+            output.print("Enter your guess which is " + length + " characters long which are from a-z");
             String input = scan.nextLine().trim();
             if (input.length() != length) {
                 output.println("Invalid guess length");
@@ -29,7 +30,7 @@ public class ConsoleCodeBreaker implements CodeBreaker{
 
             int invalidCaracters = 0;
             for (char character : input.toCharArray()) {
-                if (character < '1' || Character.getNumericValue(character) > range) {
+                if (character < '1' || character > alphabet[range]) {
                     ++invalidCaracters;
                 }
             }
