@@ -21,7 +21,7 @@ public class ConsoleCodeMaker implements CodeMaker{
         int validCharacters = 0;
 
         while (validCode == 0) {
-            System.out.print("Enter a code that is " + length + " long that is comprised of characters between a and " + ('a'+range));
+            System.out.print("Enter secret code with length["+length+"] and range["+range+"]:" );
             String input = scan.nextLine();
             input = input.trim();
 

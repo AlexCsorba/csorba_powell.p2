@@ -30,6 +30,7 @@ public class Code implements Cloneable {
     private int length;
 
     public Code(String code) throws IllegalArgumentException {
+        //iterates through list to ensure that only valid inputs are being turned into a code
         for (char item : code.toCharArray()) {
             if (!Character.isLetter(item)) {
                 throw new IllegalArgumentException("Invalid character in code: " + item);
@@ -43,17 +44,17 @@ public class Code implements Cloneable {
     }
 
     public boolean equals(Object otherObject) {
+       boolean areEqual = false;
         if (this == otherObject) {
-            return true;
+            areEqual = true;
         }
         if (otherObject == null) {
-            return false;
+            areEqual = false;
         }
         if (getClass() != otherObject.getClass()) {
-            return false;
+            areEqual = false;
         }
-        Code other = (Code) otherObject;
-        return gameCode.equals(other.gameCode);
+        return areEqual;
     }
 
     public Results compare(Code other) throws IllegalArgumentException {
@@ -63,6 +64,7 @@ public class Code implements Cloneable {
         int bulls = 0;
         int cows = 0;
         int[] counts = new int[26];
+        //goes through both codes to check for bulls and cows
         for (int i = 0; i < gameCode.length(); i++) {
             char c1 = gameCode.charAt(i);
             char c2 = other.gameCode.charAt(i);
@@ -99,7 +101,7 @@ public class Code implements Cloneable {
     public boolean hasNextCode(int range) {
         boolean nextCodePossible = false;
         for (char c : gameCode.toCharArray()) {
-            if (c < 'a' + range - 1 && nextCodePossible == false) {
+            if (c < 'a' + range - 1 && !nextCodePossible) {
                 nextCodePossible = true;
             }
         }

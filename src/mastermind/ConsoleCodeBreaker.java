@@ -22,7 +22,7 @@ public class ConsoleCodeBreaker implements CodeBreaker{
         boolean givenValidGuess = false;
 
         while (!givenValidGuess) {
-            output.print("Enter your guess which is " + length + " characters long which are from a-z");
+            output.print("Enter your guess which is " + length + " characters long which are from a-"+((char)(range-1+'a'))+": ");
             String input = scan.nextLine().trim();
             if (input.length() != length) {
                 output.println("Invalid guess length");
