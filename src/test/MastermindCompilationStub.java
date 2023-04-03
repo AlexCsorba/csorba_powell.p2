@@ -7,7 +7,7 @@ import mastermind.CodeBreaker;
 import mastermind.CodeMaker;
 import mastermind.ConsoleCodeBreaker;
 import mastermind.ConsoleCodeMaker;
-/*import mastermind.EliminationBreaker;*/
+import mastermind.EliminationBreaker;
 import mastermind.RandomCodeMaker;
 
 /**
@@ -48,9 +48,11 @@ public class MastermindCompilationStub {
 
 		// EliminationCodeBreaker
 		breaker = new EliminationBreaker(4, 4);
+		System.out.println(breaker.possibleCodeCount());
 		code = breaker.nextGuess();
 		breaker.guessResults(code, result);
 		integer = breaker.possibleCodeCount();
+		System.out.println(integer);
 	}
 
 }

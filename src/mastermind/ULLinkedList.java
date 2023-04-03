@@ -1,3 +1,4 @@
+//@authors Julian Powell and Alex Csorba
 package mastermind;
 
 import java.util.Iterator;
@@ -115,13 +116,13 @@ public class ULLinkedList<E> implements Cloneable, Iterable<E> {
             return false;
         }
 
-        ULLinkedList<?> otherList = (ULLinkedList<?>) otherObject;
+        ULLinkedList<E> otherList = (ULLinkedList<E>) otherObject;
         if (size != otherList.size()) {
             return false;
         }
 
-        Node thisCurrent = head;
-        Node otherCurrent = otherList.head;
+        Node<E> thisCurrent = head;
+        Node<E> otherCurrent = otherList.head;
         while (thisCurrent != null) {
             if (!thisCurrent.data.equals(otherCurrent.data)) {
                 return false;
@@ -137,7 +138,7 @@ public class ULLinkedList<E> implements Cloneable, Iterable<E> {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("[");
-        Node current = head;
+        Node<E> current = head;
         while (current != null) {
             sb.append(current.data);
             if (current.next != null) {
@@ -151,7 +152,7 @@ public class ULLinkedList<E> implements Cloneable, Iterable<E> {
 
 
     public void addFirst(E item) {
-        Node newNode = new Node(item, head);
+        Node<E> newNode = new Node<>(item, head);
         head = newNode;
         if (tail == null) {
             tail = newNode;
@@ -160,7 +161,7 @@ public class ULLinkedList<E> implements Cloneable, Iterable<E> {
     }
 
     public void addLast(E item) {
-        Node newNode = new Node(item, null);
+        Node<E> newNode = new Node<>(item, null);
         if (tail == null) {
             head = newNode;
         } else {

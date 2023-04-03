@@ -1,3 +1,4 @@
+//@authors Julian Powell and Alex Csorba
 package mastermind;
 
 import java.util.Scanner;
@@ -20,25 +21,27 @@ public class ConsoleCodeMaker implements CodeMaker{
         int validCharacters = 0;
 
         while (validCode == 0) {
-            System.out.print("Enter a code that is " + length + " long that is comprised of characters between 1 and " + range);
+            System.out.print("Enter a code that is " + length + " long that is comprised of characters between a and " + ('a'+range));
             String input = scan.nextLine();
             input = input.trim();
 
             if (input.length() != length) {
                 System.out.println("Please enter a code of specified length");
             }
-
-            else for (char item : input.toCharArray()) {
-                if (Character.getNumericValue(item) < 1 || Character.getNumericValue(item)-9 > range) {
-                    System.out.println("Please enter a code with acceptable values");
-                } else {
-                    validCharacters++;
+            else {
+                for (char item : input.toCharArray()) {
+                    if (item < 'a' || item - 'a' > range) {
+                        System.out.println("Please enter a code with acceptable values");
+                    } else {
+                        validCharacters++;
+                    }
                 }
             }
             if(validCharacters == length){
                 validCode = 1;
                 finalCode = new Code(input);
             }
+            validCharacters = 0;
         }
         return finalCode;
     }

@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44c31ced-f1c4-4548-a42e-dd33b81d0220" name="Changes" comment="working">
-      <change afterPath="$PROJECT_DIR$/src/test/MastermindCompilationStub.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mastermind/Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/Code.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mastermind/ConsoleCodeBreaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/ConsoleCodeBreaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mastermind/ConsoleCodeMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/ConsoleCodeMaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mastermind/ConsoleInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/ConsoleInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mastermind/EliminationBreaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/EliminationBreaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mastermind/RandomCodeMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/RandomCodeMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mastermind/ULLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mastermind/ULLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/MastermindCompilationStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MastermindCompilationStub.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,13 +30,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/julia/IdeaProjects/csorba_powell.p2/src/test"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/julia/IdeaProjects/csorba_powell.p2/src/test&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\julia\IdeaProjects\csorba_powell.p2\src\test" />
@@ -86,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680220771420</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="working">
+      <created>1680226294198</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680226294198</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

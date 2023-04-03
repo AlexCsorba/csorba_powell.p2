@@ -1,3 +1,4 @@
+//@authors Julian Powell and Alex Csorba
 package mastermind;
 
 public class MS1Main {

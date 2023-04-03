@@ -1,3 +1,4 @@
+//@authors Julian Powell and Alex Csorba
 package mastermind;
 
 import java.io.PrintStream;
@@ -10,6 +11,7 @@ public class ConsoleInterface {
         System.out.print("Enter code length: ");
         int codeLength = scan.nextInt();
         int codeRange = 26;
+
         Code.Results winningResults = new Code.Results(codeLength, 0);
         CodeMaker codeMaker = new ConsoleCodeMaker(scan, out, codeLength, codeRange);
         CodeBreaker codeBreaker = new EliminationBreaker(codeLength, codeRange);
@@ -17,6 +19,7 @@ public class ConsoleInterface {
         Code gameCode = codeMaker.generateCode();
         System.out.println(gameCode);
         int numGuesses = 0;
+
         boolean foundCode = false;
         while (!foundCode) {
             System.out.println("Number of possible codes: " + codeBreaker.possibleCodeCount());

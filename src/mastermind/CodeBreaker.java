@@ -1,3 +1,4 @@
+//@author Joe Meehean
 package mastermind;
 
 

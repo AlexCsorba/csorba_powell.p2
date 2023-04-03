@@ -1,3 +1,4 @@
+//@authors Julian Powell and Alex Csorba
 package mastermind;
 
 import java.util.Scanner;
@@ -8,7 +9,6 @@ public class ConsoleCodeBreaker implements CodeBreaker{
     private final PrintStream output;
     private final int length;
     private final int range;
-    char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
 
     public ConsoleCodeBreaker(java.util.Scanner scanner, java.io.PrintStream out, int codeLength, int codeRange){
         scan = scanner;
@@ -30,7 +30,7 @@ public class ConsoleCodeBreaker implements CodeBreaker{
 
             int invalidCaracters = 0;
             for (char character : input.toCharArray()) {
-                if (character < '1' || character > alphabet[range]) {
+                if (character < 'a' || character-'a' > range) {
                     ++invalidCaracters;
                 }
             }
